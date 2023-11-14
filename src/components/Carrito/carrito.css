@@ -1,0 +1,99 @@
+.modal-header {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 60px;
+    align-items: center;
+    width: 215.8vh;
+    /* margin-left: 2px; */
+    margin-top: 90px;
+}
+
+.modal-container {
+    width: 215.8vh;
+    min-height: 100vh;
+    /* position: fixed; */
+    top: 0;
+    overflow-y: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* z-index: 2; */
+    /* max-width: 215.8vh; */
+
+}
+
+.modal-content {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 1px 0px 0 rgb(182, 182, 182);
+}
+
+.modal-content img {
+    width: 140px;
+    margin-right: 80px;
+    margin-left: 10px;
+    margin-top: 2px;
+
+    /* margin-bottom: 10px; */
+}
+
+.modal-content h3 {
+    font-size: 0.99em;
+    color: black;
+}
+
+.modal-content p {
+    color: black;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.modal-content .cantidad {
+    margin-left: 70px;
+}
+
+.modal-content .precio-cantidad {
+    margin-left: 80px;
+}
+
+.modal-content button {
+    margin-left: 200px;
+}
+
+.modal-container .precioTotal {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.modal-container .carrito {
+    margin-left: 580px;
+}
+.modal-container .carritoVa{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 80px;
+}
+.finalizar{
+    margin-left: 600px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.finalizar{
+    background-color: rgb(61, 60, 60);
+    color: white;
+    border-radius: 5px;
+}
+.finalizar:hover {
+   background-color:  black;
+}

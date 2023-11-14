@@ -1,0 +1,27 @@
+.categorias{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.btn-cat{
+    background-color: rgb(90, 89, 89);
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.btn-cat:hover{
+    background-color: rgb(44, 43, 43);
+}
+.categorias h3{
+    /* font-size: 1em; */
+    height: 40px;
+    color: rgb(29, 28, 28);
+    /* font-family:sans-serif; */
+    margin-top: 8px;
+}
