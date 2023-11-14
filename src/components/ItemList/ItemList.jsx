@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react"
-import { Link } from "react-router-dom";
 import styles from './item.css'
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";

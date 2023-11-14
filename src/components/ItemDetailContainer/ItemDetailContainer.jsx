@@ -4,16 +4,7 @@ import style from './detail.css'
 import { db } from "../../firebase/client"
 import { doc, getDoc } from "firebase/firestore";
 import ItemDetail from "../ItemDetail/ItemDetail";
-// import CartElements from "../../context/CartElements";
 
-
-
-
-// export const dataContext = createContext()
-// export function dateProvider({children}){
-//     const [cart, setCart] = useState([])
-    
-// }
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState([]);
