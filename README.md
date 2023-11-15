@@ -18,7 +18,7 @@
 ###### DESCRIPCION DEL PROYECTO :tw-1f4cc: :
  - Este proyecto es un sistema de comercio electrónico (e-commerce) diseñado para la venta de ropa de moda. Proporciona una plataforma robusta y fácil de usar que permite a los usuarios explorar una amplia variedad de prendas de vestir.
    
-#####CARACTERÍSTICAS PRINCIPALES:
+##### CARACTERÍSTICAS PRINCIPALES:
 - Catálogo Extenso: El sistema presenta un catálogo diverso de ropa de alta calidad, que abarca desde prendas casuales hasta artículos de moda para ocasiones especiales.
 - Detalle de productos: Se muestra al usuario cuando hace click en el boton (ver mas) los detalles del producto seleccionado, con un boton para agregar al carrito y con la cantidad que solicite.
 - Carrito de Compras: Funcionalidad de carrito de compras persistente.Vista previa del carrito, eliminación de productos, canditad del producto. precio , precio total y un boton para finalizar compra.
