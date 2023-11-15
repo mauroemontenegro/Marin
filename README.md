@@ -15,7 +15,7 @@
 - Técnicas de rendering
 - Firebase I y Firebase II
 
-###### DESCRIPCION DEL PROYECTO :tw-1f4cc: :
+###### DESCRIPCION DEL PROYECTO : tw-1f4cc: :
  - Este proyecto es un sistema de comercio electrónico (e-commerce) diseñado para la venta de ropa de moda. Proporciona una plataforma robusta y fácil de usar que permite a los usuarios explorar una amplia variedad de prendas de vestir.
    
 ##### CARACTERÍSTICAS PRINCIPALES:
