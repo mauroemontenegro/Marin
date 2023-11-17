@@ -9,7 +9,7 @@ const Checkout = () => {
     const [ pedidosId, setPedidoId ] = useState('')
     const { carrito, priceTotal, vaciarCarrito } = useContext(CartContext);
 
-    const { register , handleSubmit} = useForm();
+    const { register ,formState:{ errors }, handleSubmit} = useForm();
 
     const comprar = (data)=>{
         const pedidos = {
@@ -40,10 +40,20 @@ const Checkout = () => {
             <h3 className="main-title">FINALIZAR COMPRA</h3>
             <form className="formulario" onSubmit={handleSubmit(comprar)}>
 
-                <input type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />
-                <input type="email" placeholder="Ingresá tu e-mail" {...register("email")} />
-                <input type="phone" placeholder="Ingresá tu teléfono" {...register("telefono")} />
-
+                <input type="text" placeholder="Ingresá tu nombre" {...register("nombre", {
+                    required:true
+                })} />
+                <input type="email" placeholder="Ingresá tu e-mail" {...register("email",{
+                    pattern: /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/ ,
+                    required:true 
+                })}/>
+                {errors.email?.type === 'pattern' && <p className="errors">El formato de email es incorrecto</p>}
+                <input type="phone" placeholder="Ingresá tu teléfono" {...register("telefono", {
+                    pattern: /^\+?[0-9\s.-]+$/ ,
+                    required:true 
+                })} />
+                {errors.phone?.type === 'pattern' && <p className="errors">El formato de telefono es incorrecto</p>}
+  
                 <button className="enviar" type="submit">COMPRAR</button>
 
             </form>

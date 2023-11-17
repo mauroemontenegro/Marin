@@ -40,3 +40,8 @@ form input{
     margin-left: 100px;
     height: 80vh;
 }
+.errors{
+    color: rgb(255, 0, 0);
+    font-size: 0.8em;
+    margin: 0;
+}

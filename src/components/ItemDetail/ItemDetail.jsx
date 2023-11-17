@@ -18,7 +18,7 @@ const ItemDetail = ({data})=>{
     
     return(
         <>
-         <h2 className="dt-pd">DETALLES DE PRODUCTO</h2>
+         <h2 className="dt-pd">DETALLES DEL PRODUCTO</h2>
             <div className="content">
                 <div className="img-detalle">
                     <img src={data.image} alt="" />
