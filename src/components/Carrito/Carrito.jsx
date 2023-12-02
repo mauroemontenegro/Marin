@@ -20,7 +20,7 @@ const Carrito = () => {
                         <img src={prod.image} alt="" />
                         <h3>{prod.title}</h3>
                         <p className="precio">${prod.price}</p>
-                        <p className="cantidad">Cantidad: {prod.contador}</p>
+                        <p className="cantidad-final">Cantidad: {prod.contador}</p>
                         <p className="precio-cantidad">Total: ${prod.price * prod.contador}</p>
                         <button className="eliminar-boton" onClick={() => deleteProd(prod.id)}>X</button>
                     </div>
@@ -31,7 +31,9 @@ const Carrito = () => {
             {carrito.length > 0 ?
                 <>
                     <h3 className="precioTotal">Precio Total: ${priceTotal()}</h3>
-                    <Link to="/checkout"><button className="finalizar">Finalizar Compra</button></Link>
+                    <div className="finalizar">
+                    <Link to="/checkout"><button className="btn-fin">FINALIZAR COMPRA</button></Link>
+                    </div>
                 </>
                 : <h3 className="carritoVa">CARRITO DE COMPRAS VACIO :(</h3>
             }

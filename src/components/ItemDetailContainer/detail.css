@@ -15,12 +15,11 @@
 .img-detalle{
     width: 30%;
     height: 100vh;
-    /* margin-right: 10px; */
+    
 }
 .detalle{
     margin-top:20px;
-    margin-left: 200px;
-    /* width: 480px; */
+    margin-left: 100px;
     height:500px;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -28,9 +27,13 @@
 .detalle ul li{
     list-style: none;
 }
-/* .detalle .boton-cart{
-    margin: 30px 0px px 20px;
-} */
+
+
+.boton-cart{
+    width: 250px; 
+    height: 40px;  
+    background-color: rgb(68, 67, 67);
+}
 .boton-cart:hover{
     background-color: rgb(0, 0, 0);
 }
@@ -43,17 +46,33 @@
 .detalle p span{
     font-weight: 700;
 }
+.detalle-prod{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
 .cantidades{
     display: flex;
-    flex-direction: row;
-    margin-left: 120px;
-    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    margin-right: 50px;
 }
-.cantidades .boton-cart{
-    margin-left: 20px;
+.cantidades p{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 6px;
+    margin-right: 6px;
 }
+
 .cantidades button{
-    background-color: rgb(61, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 40px; 
+    background-color: rgb(68, 67, 67);
     color: white;
     border-radius: 5px;
 }
@@ -62,7 +81,6 @@
 }
 
 .content{
-    /* width: 100%; */
     display: flex;
     margin-left:20px;
 }
@@ -73,5 +91,4 @@
     background-color: black;
     font-size: 1.4em;
     margin-top: 80px;
-    /* margin-left:250px ; */
 }

@@ -3,11 +3,11 @@ import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 
 
-const ItemDetail = ({data})=>{
+const ItemDetail = ({ data }) => {
 
     const [contador, setContador] = useState(1);
 
-    const {carrito , agregarCarrito} = useContext(CartContext)
+    const { carrito, agregarCarrito } = useContext(CartContext)
 
     const suma = () => {
         setContador(contador + 1);
@@ -15,10 +15,10 @@ const ItemDetail = ({data})=>{
     const resta = () => {
         contador > 1 && setContador(contador - 1)
     }
-    
-    return(
-        <>
-         <h2 className="dt-pd">DETALLES DEL PRODUCTO</h2>
+
+    return (
+        <main>
+            <h2 className="dt-pd">DETALLES DEL PRODUCTO</h2>
             <div className="content">
                 <div className="img-detalle">
                     <img src={data.image} alt="" />
@@ -30,15 +30,15 @@ const ItemDetail = ({data})=>{
                         <li><p><span>Categoria:</span> {data.categoryId}</p></li>
                         <li><p className="productos-precio"><span>Precio:</span>${data.price}</p></li>
                     </ul>
-                    <ItemCount 
-                    contador={contador}
-                    suma={suma}
-                    resta={resta}
-                    buyProducts={()=>agregarCarrito(data, contador)}
+                    <ItemCount
+                        contador={contador}
+                        suma={suma}
+                        resta={resta}
+                        buyProducts={() => agregarCarrito(data, contador)}
                     />
                 </div>
             </div>
-        </>
+        </main>
     )
 }
 export default ItemDetail

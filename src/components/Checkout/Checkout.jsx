@@ -36,9 +36,11 @@ const Checkout = () => {
         )
     }
     return (
+        <main>
+
         <div className="container">
-            <h3 className="main-title">FINALIZAR COMPRA</h3>
             <form className="formulario" onSubmit={handleSubmit(comprar)}>
+            <h3 className="main-title">FINALIZAR COMPRA</h3>
 
                 <input type="text" placeholder="Ingresá tu nombre" {...register("nombre", {
                     required:true
@@ -48,7 +50,7 @@ const Checkout = () => {
                     required:true 
                 })}/>
                 {errors.email?.type === 'pattern' && <p className="errors">El formato de email es incorrecto</p>}
-                <input type="phone" placeholder="Ingresá tu teléfono" {...register("telefono", {
+                <input type="phone" placeholder="Ingresá tu teléfono" {...register("phone", {
                     pattern: /^\+?[0-9\s.-]+$/ ,
                     required:true 
                 })} />
@@ -58,6 +60,7 @@ const Checkout = () => {
 
             </form>
         </div>
+        </main>
     )
 }
 export default Checkout

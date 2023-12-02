@@ -1,20 +1,23 @@
+main .container{
+    display: flex;
+    justify-content: center;
+}
 .container form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 600px;
 }
-.container h3{
+main .container h3{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 5px;
     height: 40px;
-    text-align: center;
 }
 .container{
-    margin-left: 400px;
+    background-color: rgb(172, 170, 170);
     height: 80vh;
-    margin-top: 150px;
 }
 form input{
     height: 30px;
@@ -24,7 +27,7 @@ form input{
 .main-title{
     color: white;
     background-color: black;
-    width: 600px;
+    /* width: 600px; */
     /* margin-bottom: 200px; */
 }
 .formulario button{

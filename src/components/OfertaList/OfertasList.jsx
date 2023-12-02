@@ -1,5 +1,5 @@
 import {  useEffect, useState } from "react"
-import styles from './item.css'
+import styles from '../ItemList/item.css'
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../firebase/client";
@@ -8,7 +8,7 @@ import Item from "../Item/Item";
 
 // export const itemContext = createContext()
 
-const ItemList = () => {
+const OfertasList = () => {
 
     const [data, setData] = useState([]);
     const { id } = useParams()
@@ -16,9 +16,9 @@ const ItemList = () => {
     useEffect(() => {
         
         const productRef = id ? query(
-            collection(db, "products"),
+            collection(db, "ofertas"),
             where("categoryId", "==", id)
-        ) : collection(db, "products")
+        ) : collection(db, "ofertas")
 
         getDocs(productRef)
             .then(snapshot => {
@@ -34,4 +34,4 @@ const ItemList = () => {
     )
 
 }
-export default ItemList
+export default OfertasList

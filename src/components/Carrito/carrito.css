@@ -5,29 +5,25 @@
     height: 60px;
     align-items: center;
     width: 215.8vh;
-    /* margin-left: 2px; */
+ 
     margin-top: 80px;
 }
 
 .modal-container {
     width: 215.8vh;
     min-height: 100vh;
-    /* position: fixed; */
     top: 0;
     overflow-y: hidden;
     background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* z-index: 2; */
-    /* max-width: 215.8vh; */
+
 
 }
 
 .modal-content {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
@@ -39,8 +35,6 @@
     margin-right: 80px;
     margin-left: 10px;
     margin-top: 2px;
-
-    /* margin-bottom: 10px; */
 }
 
 .modal-content h3 {
@@ -53,19 +47,19 @@
     font-size: 1em;
     margin-bottom: 8px;
     font-weight: 600;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
-.modal-content .cantidad {
+.modal-content .cantidad-final {
     margin-left: 70px;
 }
 
-.modal-content .precio-cantidad {
+.modal-content .precio-cantidad-final {
     margin-left: 80px;
 }
 
 .modal-content button {
-    margin-left: 200px;
+    margin-left: 190px;
 }
 
 .modal-container .precioTotal {
@@ -84,16 +78,28 @@
     color: black;
     margin-top: 80px;
 }
-.finalizar{
+.eliminar-boton{
+    background-color: rgb(231, 40, 40);
+}
+.eliminar-boton:hover{
+    background-color: red;
+}
+/* .finalizar{
     margin-left: 600px;
     margin-top: 10px;
     margin-bottom: 100px;
-}
+} */
 .finalizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn-fin{
     background-color: rgb(61, 60, 60);
     color: white;
     border-radius: 5px;
 }
-.finalizar:hover {
+.btn-fin:hover {
    background-color:  black;
 }

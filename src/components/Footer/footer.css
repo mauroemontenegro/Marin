@@ -2,7 +2,11 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: rgb(49, 48, 48);
+
     /* max-width: 100%; */
+}
+footer-wrap{
+    flex: 1;
 }
 .navegacion2{
     display: flex;

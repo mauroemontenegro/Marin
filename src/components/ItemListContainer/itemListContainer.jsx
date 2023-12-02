@@ -1,8 +1,11 @@
 import React from "react"
 import styles from './list.module.css'
 import Categories from "../Categorias/Categories";
-import ItemList from "../ItemList/ItemList";
+// import ItemList from "../ItemList/ItemList";
 import inicio from "../../imagenes/inico2.webp"
+// import OfertasList from "../OfertaList/OfertasList";
+import ItemList from "../ItemList/ItemList";
+
 
 
 const ItemListContainer = ({ greting }) => {
@@ -17,6 +20,7 @@ const ItemListContainer = ({ greting }) => {
             <Categories />
             </div>
             <div className="contenedor">
+                {/* <OfertasList /> */}
                 <ItemList/>
             </div>
         </>

@@ -11,6 +11,7 @@ const ItemDetailContainer = () => {
     const { itemId } = useParams()
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const productRef = doc(db, "products", itemId)
         getDoc(productRef)
             .then(snapshot => {
@@ -24,6 +25,8 @@ const ItemDetailContainer = () => {
             .catch(error => console.log(error))
     }, [itemId])
 
-    return <ItemDetail data={data}/>
+    return(
+         <ItemDetail data={data}/>
+        ) 
 }
 export default ItemDetailContainer
